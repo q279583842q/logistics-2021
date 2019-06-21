@@ -1,0 +1,567 @@
+2019-06-21 10:24:03,977 [Worker-31] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updated local repository index
+2019-06-21 10:24:17,543 [Worker-28] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.bb:logistics_parent:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_parent\pom.xml.
+2019-06-21 10:25:01,169 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_common:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_common\pom.xml.
+2019-06-21 10:25:02,293 [Worker-27] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_common/src/main/java
+2019-06-21 10:25:02,304 [Worker-27] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_common/src/main/resources
+2019-06-21 10:25:02,306 [Worker-27] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_common/src/test/java
+2019-06-21 10:25:02,307 [Worker-27] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_common/src/test/resources
+2019-06-21 10:25:07,230 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:25:07,244 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:25:07,248 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:25:07,253 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:25:35,741 [Worker-33] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.bb:logistics_manager:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\pom.xml.
+2019-06-21 10:26:41,426 [Worker-33] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_pojo:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_pojo\pom.xml.
+2019-06-21 10:26:41,667 [Worker-33] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_manager_pojo/src/main/java
+2019-06-21 10:26:41,668 [Worker-33] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_manager_pojo/src/main/resources
+2019-06-21 10:26:41,669 [Worker-33] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_manager_pojo/src/test/java
+2019-06-21 10:26:41,670 [Worker-33] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_manager_pojo/src/test/resources
+2019-06-21 10:26:42,215 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:26:42,222 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:26:42,224 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:26:42,229 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:26:43,498 [Worker-33] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.bb:logistics_manager:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\pom.xml.
+2019-06-21 10:26:43,635 [Worker-33] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_pojo:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_pojo\pom.xml.
+2019-06-21 10:26:44,098 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:26:44,113 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:26:44,116 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:26:44,120 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:27:08,367 [Worker-31] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_dao:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_dao\pom.xml.
+2019-06-21 10:27:08,661 [Worker-31] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_manager_dao/src/main/java
+2019-06-21 10:27:08,662 [Worker-31] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_manager_dao/src/main/resources
+2019-06-21 10:27:08,663 [Worker-31] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_manager_dao/src/test/java
+2019-06-21 10:27:08,663 [Worker-31] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_manager_dao/src/test/resources
+2019-06-21 10:27:09,466 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.bb:logistics_manager:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\pom.xml.
+2019-06-21 10:27:09,619 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_pojo:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_pojo\pom.xml.
+2019-06-21 10:27:09,698 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_dao:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_dao\pom.xml.
+2019-06-21 10:27:10,405 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:27:10,418 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:27:10,421 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:27:10,427 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:27:10,515 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:27:10,521 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:27:10,522 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:27:10,526 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:27:34,217 [Worker-33] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_service:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_service\pom.xml.
+2019-06-21 10:27:34,477 [Worker-33] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_manager_service/src/main/java
+2019-06-21 10:27:34,477 [Worker-33] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_manager_service/src/main/resources
+2019-06-21 10:27:34,478 [Worker-33] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_manager_service/src/test/java
+2019-06-21 10:27:34,479 [Worker-33] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_manager_service/src/test/resources
+2019-06-21 10:27:35,085 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.bb:logistics_manager:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\pom.xml.
+2019-06-21 10:27:35,195 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_dao:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_dao\pom.xml.
+2019-06-21 10:27:35,279 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_pojo:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_pojo\pom.xml.
+2019-06-21 10:27:35,412 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_service:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_service\pom.xml.
+2019-06-21 10:27:36,060 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:27:36,065 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:27:36,066 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:27:36,074 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:27:36,095 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:27:36,100 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:27:36,102 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:27:36,106 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:27:36,160 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:27:36,169 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:27:36,177 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:27:36,183 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:27:58,857 [Worker-28] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_web:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_web\pom.xml.
+2019-06-21 10:28:00,003 [Worker-28] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_manager_web/src/main/java
+2019-06-21 10:28:00,005 [Worker-28] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_manager_web/src/main/resources
+2019-06-21 10:28:00,006 [Worker-28] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_manager_web/src/test/java
+2019-06-21 10:28:00,006 [Worker-28] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_manager_web/src/test/resources
+2019-06-21 10:28:03,628 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.bb:logistics_manager:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\pom.xml.
+2019-06-21 10:28:03,758 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_service:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_service\pom.xml.
+2019-06-21 10:28:03,904 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_dao:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_dao\pom.xml.
+2019-06-21 10:28:04,015 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_pojo:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_pojo\pom.xml.
+2019-06-21 10:28:04,113 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_web:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_web\pom.xml.
+2019-06-21 10:28:06,028 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:28:06,039 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:28:06,040 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:28:06,046 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:28:06,067 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:28:06,073 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:28:06,074 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:28:06,080 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:28:06,098 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:28:06,103 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:28:06,104 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:28:06,128 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:28:06,266 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:28:06,272 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:28:06,275 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:28:06,284 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:28:15,666 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:28:15,670 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:28:15,672 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:28:15,679 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:28:32,798 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:28:32,803 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:28:32,806 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-06-21 10:28:32,811 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:30:34,712 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.bb:logistics_parent:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_parent\pom.xml.
+2019-06-21 10:30:42,103 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_common:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_common\pom.xml.
+2019-06-21 10:30:42,111 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.bb:logistics_manager:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\pom.xml.
+2019-06-21 10:30:42,260 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_service:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_service\pom.xml.
+2019-06-21 10:30:42,382 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_dao:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_dao\pom.xml.
+2019-06-21 10:30:42,522 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_pojo:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_pojo\pom.xml.
+2019-06-21 10:30:42,618 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_web:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_web\pom.xml.
+2019-06-21 10:30:45,964 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:30:45,970 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:30:45,972 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:30:45,973 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:30:45,994 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:30:45,994 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:30:45,996 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:30:45,997 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:30:46,018 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:30:46,019 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:30:46,020 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:30:46,021 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:30:46,069 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:30:46,071 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:30:46,072 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:30:46,073 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:30:46,100 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:30:46,101 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:30:46,102 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:30:46,103 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:32:17,849 [Worker-43] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-06-21 10:32:18,010 [Worker-43] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_common:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_common\pom.xml.
+2019-06-21 10:32:18,160 [Worker-43] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_common/src/main/java
+2019-06-21 10:32:18,161 [Worker-43] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_common/src/main/resources
+2019-06-21 10:32:18,231 [Worker-43] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_common/src/test/java
+2019-06-21 10:32:18,232 [Worker-43] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_common/src/test/resources
+2019-06-21 10:32:18,426 [Worker-43] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2019-06-21 10:32:18,560 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:32:18,566 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:32:18,573 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:32:18,574 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:32:28,340 [Worker-44] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-06-21 10:32:28,628 [Worker-44] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.bb:logistics_manager:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\pom.xml.
+2019-06-21 10:32:28,737 [Worker-44] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_dao:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_dao\pom.xml.
+2019-06-21 10:32:28,846 [Worker-44] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_pojo:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_pojo\pom.xml.
+2019-06-21 10:32:28,945 [Worker-44] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_service:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_service\pom.xml.
+2019-06-21 10:32:29,054 [Worker-44] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_web:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_web\pom.xml.
+2019-06-21 10:32:30,170 [Worker-44] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_manager_dao/src/main/java
+2019-06-21 10:32:30,170 [Worker-44] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_manager_dao/src/main/resources
+2019-06-21 10:32:30,212 [Worker-44] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_manager_dao/src/test/java
+2019-06-21 10:32:30,213 [Worker-44] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_manager_dao/src/test/resources
+2019-06-21 10:32:30,329 [Worker-44] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_manager_pojo/src/main/java
+2019-06-21 10:32:30,330 [Worker-44] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_manager_pojo/src/main/resources
+2019-06-21 10:32:30,382 [Worker-44] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_manager_pojo/src/test/java
+2019-06-21 10:32:30,383 [Worker-44] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_manager_pojo/src/test/resources
+2019-06-21 10:32:30,506 [Worker-44] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_manager_service/src/main/java
+2019-06-21 10:32:30,507 [Worker-44] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_manager_service/src/main/resources
+2019-06-21 10:32:30,560 [Worker-44] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_manager_service/src/test/java
+2019-06-21 10:32:30,561 [Worker-44] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_manager_service/src/test/resources
+2019-06-21 10:32:30,722 [Worker-44] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_manager_web/src/main/java
+2019-06-21 10:32:30,723 [Worker-44] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_manager_web/src/main/resources
+2019-06-21 10:32:30,774 [Worker-44] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_manager_web/src/test/java
+2019-06-21 10:32:30,775 [Worker-44] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_manager_web/src/test/resources
+2019-06-21 10:32:31,606 [Worker-44] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for logistics_manager_web
+2019-06-21 10:32:31,641 [Worker-44] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 3 sec
+2019-06-21 10:32:31,922 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:32:31,923 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:32:31,925 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:32:31,926 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:32:32,035 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:32:32,036 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:32:32,042 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:32:32,042 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:32:32,111 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:32:32,112 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:32:32,114 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:32:32,114 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:32:32,233 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:32:32,235 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:32:32,249 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:32:32,249 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:32:32,250 [Worker-35] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of logistics_manager_web
+2019-06-21 10:32:32,252 [Worker-35] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for logistics_manager_web
+2019-06-21 10:32:32,280 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:32:40,483 [Worker-35] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_parent
+2019-06-21 10:32:40,484 [Worker-35] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2019-06-21 10:33:26,922 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_common:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_common\pom.xml.
+2019-06-21 10:33:29,251 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2019-06-21 10:33:30,568 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:33:30,569 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:33:30,571 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:33:30,571 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:33:31,178 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2019-06-21 10:33:31,485 [Worker-33] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_common:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_common\pom.xml.
+2019-06-21 10:33:31,588 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2019-06-21 10:33:31,814 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:33:31,817 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:33:31,819 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:33:31,819 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:34:45,245 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2019-06-21 10:34:45,837 [Worker-43] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aliyun.com/nexus/content/groups/public/commons-io/commons-io/1.3.2/commons-io-1.3.2-sources.jar
+2019-06-21 10:34:46,135 [Worker-43] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/commons-io/commons-io/1.3.2/commons-io-1.3.2-sources.jar
+2019-06-21 10:34:46,295 [Worker-43] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for commons-io:commons-io:1.3.2
+2019-06-21 10:34:46,596 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:34:46,600 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:34:46,601 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:34:46,602 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:37:20,518 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.bb:logistics_manager:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\pom.xml.
+2019-06-21 10:37:21,109 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_service:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_service\pom.xml.
+2019-06-21 10:37:21,198 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_dao:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_dao\pom.xml.
+2019-06-21 10:37:21,300 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_pojo:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_pojo\pom.xml.
+2019-06-21 10:37:21,396 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_web:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_web\pom.xml.
+2019-06-21 10:37:22,772 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:37:22,773 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:37:22,774 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:37:22,775 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:37:22,798 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:37:22,799 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:37:22,800 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:37:22,800 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:37:22,822 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:37:22,822 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:37:22,825 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:37:22,826 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:37:22,869 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:37:22,869 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:37:22,871 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:37:22,872 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:38:06,373 [Worker-39] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-06-21 10:38:06,667 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.bb:logistics_manager:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\pom.xml.
+2019-06-21 10:38:07,235 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_dao:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_dao\pom.xml.
+2019-06-21 10:38:07,340 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_pojo:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_pojo\pom.xml.
+2019-06-21 10:38:07,431 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_service:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_service\pom.xml.
+2019-06-21 10:38:07,528 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_web:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_web\pom.xml.
+2019-06-21 10:38:08,867 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_manager_dao/src/main/java
+2019-06-21 10:38:08,867 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_manager_dao/src/main/resources
+2019-06-21 10:38:08,871 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_manager_dao/src/test/java
+2019-06-21 10:38:08,871 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_manager_dao/src/test/resources
+2019-06-21 10:38:08,972 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_manager_pojo/src/main/java
+2019-06-21 10:38:08,972 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_manager_pojo/src/main/resources
+2019-06-21 10:38:08,973 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_manager_pojo/src/test/java
+2019-06-21 10:38:08,975 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_manager_pojo/src/test/resources
+2019-06-21 10:38:09,073 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_manager_service/src/main/java
+2019-06-21 10:38:09,074 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_manager_service/src/main/resources
+2019-06-21 10:38:09,075 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_manager_service/src/test/java
+2019-06-21 10:38:09,075 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_manager_service/src/test/resources
+2019-06-21 10:38:09,163 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_manager_web/src/main/java
+2019-06-21 10:38:09,171 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_manager_web/src/main/resources
+2019-06-21 10:38:09,174 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /logistics_manager_web/src/test/java
+2019-06-21 10:38:09,179 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /logistics_manager_web/src/test/resources
+2019-06-21 10:38:09,634 [Worker-39] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for logistics_manager_web
+2019-06-21 10:38:09,674 [Worker-39] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 3 sec
+2019-06-21 10:38:10,106 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:38:10,108 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:38:10,114 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:38:10,115 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:38:10,118 [Worker-44] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of logistics_manager_web
+2019-06-21 10:38:10,118 [Worker-44] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for logistics_manager_web
+2019-06-21 10:38:10,136 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:38:10,261 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:38:10,262 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:38:10,264 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:38:10,264 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:38:10,746 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:38:10,747 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:38:10,748 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:38:10,749 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:38:10,838 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:38:10,839 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:38:10,840 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:38:10,841 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:38:29,913 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.bb:logistics_manager:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\pom.xml.
+2019-06-21 10:38:30,582 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_service:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_service\pom.xml.
+2019-06-21 10:38:30,675 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_dao:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_dao\pom.xml.
+2019-06-21 10:38:30,786 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_pojo:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_pojo\pom.xml.
+2019-06-21 10:38:30,895 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_web:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_web\pom.xml.
+2019-06-21 10:38:32,923 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:38:32,931 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:38:32,934 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:38:32,935 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:38:33,371 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:38:33,372 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:38:33,373 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:38:33,374 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:38:33,479 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:38:33,480 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:38:33,481 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:38:33,481 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:38:33,568 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:38:33,569 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:38:33,570 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:38:33,571 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:38:52,303 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.bb:logistics_manager:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\pom.xml.
+2019-06-21 10:38:52,850 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_service:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_service\pom.xml.
+2019-06-21 10:38:52,936 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_dao:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_dao\pom.xml.
+2019-06-21 10:38:53,015 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_pojo:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_pojo\pom.xml.
+2019-06-21 10:38:53,115 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_web:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_web\pom.xml.
+2019-06-21 10:38:55,032 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:38:55,038 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:38:55,040 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:38:55,041 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:38:55,093 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:38:55,093 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:38:55,094 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:38:55,097 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:38:55,119 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:38:55,120 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:38:55,121 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:38:55,122 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:38:55,142 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:38:55,142 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:38:55,144 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:38:55,145 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:38:59,477 [Worker-44] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.bb:logistics_manager:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\pom.xml.
+2019-06-21 10:39:00,000 [Worker-44] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_service:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_service\pom.xml.
+2019-06-21 10:39:00,098 [Worker-44] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_dao:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_dao\pom.xml.
+2019-06-21 10:39:00,190 [Worker-44] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_pojo:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_pojo\pom.xml.
+2019-06-21 10:39:00,293 [Worker-44] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_web:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_web\pom.xml.
+2019-06-21 10:39:02,621 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:39:02,628 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:39:02,630 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:39:02,631 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:39:03,047 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:39:03,048 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:39:03,049 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:39:03,050 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:39:03,167 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:39:03,169 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:39:03,170 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:39:03,171 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:39:03,268 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:39:03,269 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:39:03,270 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:39:03,270 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:39:11,877 [Worker-45] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_common
+2019-06-21 10:39:11,877 [Worker-45] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2019-06-21 10:39:23,090 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2019-06-21 10:39:23,105 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:39:23,106 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:39:23,107 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:39:23,108 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:39:48,164 [Worker-44] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.bb:logistics_manager:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\pom.xml.
+2019-06-21 10:39:48,803 [Worker-44] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_service:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_service\pom.xml.
+2019-06-21 10:39:48,919 [Worker-44] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_dao:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_dao\pom.xml.
+2019-06-21 10:39:49,040 [Worker-44] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_pojo:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_pojo\pom.xml.
+2019-06-21 10:39:49,151 [Worker-44] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_web:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_web\pom.xml.
+2019-06-21 10:39:51,760 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:39:51,760 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:39:51,762 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:39:51,762 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:39:51,915 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:39:51,916 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:39:51,917 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:39:51,918 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:39:52,520 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:39:52,521 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:39:52,526 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:39:52,527 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:39:52,715 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:39:52,716 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:39:52,717 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:39:52,717 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:39:52,862 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:39:52,862 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:39:52,863 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:39:52,864 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:39:59,919 [Worker-45] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.bb:logistics_manager:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\pom.xml.
+2019-06-21 10:40:00,582 [Worker-45] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_service:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_service\pom.xml.
+2019-06-21 10:40:00,681 [Worker-45] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_dao:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_dao\pom.xml.
+2019-06-21 10:40:00,789 [Worker-45] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_pojo:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_pojo\pom.xml.
+2019-06-21 10:40:00,873 [Worker-45] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_web:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_web\pom.xml.
+2019-06-21 10:40:01,083 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2019-06-21 10:40:02,899 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:40:02,908 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:40:02,910 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:40:02,911 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:40:03,005 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:40:03,006 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:40:03,007 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:40:03,008 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:40:03,115 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:40:03,118 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:40:03,121 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:40:03,122 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:40:03,210 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:40:03,210 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:40:03,212 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:40:03,212 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:40:43,109 [Worker-49] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_web:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_web\pom.xml.
+2019-06-21 10:40:43,682 [Worker-49] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2019-06-21 10:40:44,772 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:40:44,773 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:40:44,775 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:40:44,791 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:40:44,792 [Worker-49] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of logistics_manager_web
+2019-06-21 10:40:44,792 [Worker-49] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for logistics_manager_web
+2019-06-21 10:40:44,800 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:40:45,117 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:40:45,117 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:40:45,118 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:40:45,119 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:40:46,657 [Worker-48] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_web:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_web\pom.xml.
+2019-06-21 10:40:47,661 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:40:47,661 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:40:47,662 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:40:47,662 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:40:47,662 [Worker-48] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of logistics_manager_web
+2019-06-21 10:40:47,663 [Worker-48] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for logistics_manager_web
+2019-06-21 10:40:47,667 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:41:11,905 [Worker-44] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_service:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_service\pom.xml.
+2019-06-21 10:41:12,097 [Worker-44] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_web:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_web\pom.xml.
+2019-06-21 10:41:13,239 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:41:13,246 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:41:13,251 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:41:13,254 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:41:13,918 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:41:13,919 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:41:13,920 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:41:13,920 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:41:14,078 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:41:14,079 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:41:14,080 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:41:14,081 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:41:41,002 [Worker-45] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_dao:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_dao\pom.xml.
+2019-06-21 10:41:41,181 [Worker-45] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_service:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_service\pom.xml.
+2019-06-21 10:41:41,285 [Worker-45] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_web:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_web\pom.xml.
+2019-06-21 10:41:41,942 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2019-06-21 10:41:43,125 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:41:43,126 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:41:43,130 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:41:43,130 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:41:43,506 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:41:43,507 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:41:43,508 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:41:43,509 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:41:43,709 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:41:43,711 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:41:43,712 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:41:43,712 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:41:43,905 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:41:43,906 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:41:43,908 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:41:43,909 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:42:56,790 [Worker-48] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_dao:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_dao\pom.xml.
+2019-06-21 10:42:59,335 [Worker-48] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_service:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_service\pom.xml.
+2019-06-21 10:42:59,478 [Worker-48] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_web:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_web\pom.xml.
+2019-06-21 10:42:59,754 [Worker-48] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2019-06-21 10:43:00,817 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:43:00,818 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:43:00,822 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:43:00,823 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:43:01,348 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:43:01,349 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:43:01,358 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:43:01,366 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:43:01,666 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:43:01,667 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:43:01,669 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:43:01,669 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:43:01,851 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:43:01,852 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:43:01,853 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:43:01,853 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:45:25,612 [Worker-47] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_service:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_service\pom.xml.
+2019-06-21 10:45:30,334 [Worker-47] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_web:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_web\pom.xml.
+2019-06-21 10:45:30,659 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2019-06-21 10:45:31,796 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:45:31,796 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:45:31,798 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:45:31,799 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:45:32,204 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:45:32,204 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:45:32,206 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:45:32,207 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:45:32,726 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:45:32,727 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:45:32,728 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:45:32,729 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:45:57,240 [Worker-50] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_service:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_service\pom.xml.
+2019-06-21 10:45:57,456 [Worker-50] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_web:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_web\pom.xml.
+2019-06-21 10:45:57,459 [Worker-50] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.bb:logistics_manager_service:jar:0.0.1-SNAPSHOT is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2019-06-21 10:45:57,637 [Worker-50] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2019-06-21 10:45:57,697 [Worker-50] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.bb:logistics_manager_service:jar:0.0.1-SNAPSHOT is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2019-06-21 10:45:58,978 [Worker-50] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.bb:logistics_manager_service:jar:0.0.1-SNAPSHOT is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2019-06-21 10:45:59,469 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:45:59,476 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:45:59,478 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:45:59,479 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:46:01,519 [Worker-39] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/org/springframework/spring-orm//spring-orm-.pom
+2019-06-21 10:46:01,530 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring-orm:jar: is missing, no dependency information available
+2019-06-21 10:46:32,425 [Worker-44] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_service:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_service\pom.xml.
+2019-06-21 10:46:33,139 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring-orm:jar: is missing, no dependency information available
+2019-06-21 10:47:18,776 [Worker-52] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.bb:logistics_parent:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_parent\pom.xml.
+2019-06-21 10:47:19,359 [Worker-52] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_common:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_common\pom.xml.
+2019-06-21 10:47:19,451 [Worker-52] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2019-06-21 10:47:19,463 [Worker-52] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.bb:logistics_manager:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\pom.xml.
+2019-06-21 10:47:19,579 [Worker-52] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_pojo:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_pojo\pom.xml.
+2019-06-21 10:47:19,680 [Worker-52] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_dao:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_dao\pom.xml.
+2019-06-21 10:47:19,826 [Worker-52] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_web:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_web\pom.xml.
+2019-06-21 10:47:20,663 [Worker-52] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_service:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_service\pom.xml.
+2019-06-21 10:47:24,886 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2019-06-21 10:47:25,422 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:47:25,428 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:47:25,429 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:47:25,430 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:47:25,588 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:47:25,588 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:47:25,589 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:47:25,590 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:47:25,732 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:47:25,733 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:47:25,734 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:47:25,734 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:47:25,811 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:47:25,812 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:47:25,813 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:47:25,813 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:47:26,559 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:47:26,560 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:47:26,562 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:47:26,563 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:47:28,002 [Worker-44] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_parent
+2019-06-21 10:47:28,003 [Worker-44] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2019-06-21 10:48:28,500 [Worker-44] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_service:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_service\pom.xml.
+2019-06-21 10:48:28,879 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:48:28,880 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:48:28,881 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:48:28,882 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:49:13,800 [Worker-50] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_web:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_web\pom.xml.
+2019-06-21 10:49:15,637 [Worker-50] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2019-06-21 10:49:16,839 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:49:16,840 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:49:16,841 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 10:49:16,842 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 10:49:16,842 [Worker-50] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of logistics_manager_web
+2019-06-21 10:49:16,842 [Worker-50] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for logistics_manager_web
+2019-06-21 10:49:16,851 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 11:24:02,702 [Worker-57] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.bb:logistics_manager_web:0.0.1-SNAPSHOT @ C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager\logistics_manager_web\pom.xml.
+2019-06-21 11:24:04,652 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 11:24:04,653 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 11:24:04,654 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 11:24:04,655 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 11:24:04,655 [Worker-57] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of logistics_manager_web
+2019-06-21 11:24:04,656 [Worker-57] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for logistics_manager_web
+2019-06-21 11:24:04,669 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 11:24:18,740 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 11:24:18,740 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 11:24:18,741 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 11:24:18,758 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 11:24:32,133 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 11:24:32,134 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 11:24:32,135 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 11:24:32,136 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 11:24:45,275 [Worker-57] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\dengp\Desktop\共享文件\java0225\workspace\logisticsProject\logistics_manager
+2019-06-21 11:24:45,275 [Worker-57] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2019-06-21 11:25:10,481 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 11:25:10,483 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 11:25:10,484 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 11:25:10,484 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 11:25:10,681 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 11:25:10,681 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 11:25:10,682 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 11:25:10,683 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 11:25:10,926 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 11:25:10,927 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 11:25:10,928 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 11:25:10,928 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 11:25:10,953 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 11:25:10,954 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 11:25:10,956 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-21 11:25:10,958 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-21 11:25:19,166 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
