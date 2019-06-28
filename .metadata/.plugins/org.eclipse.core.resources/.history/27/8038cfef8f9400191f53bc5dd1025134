@@ -1,0 +1,73 @@
+package com.bb.service.impl;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Service;
+
+import com.bb.dto.UserDto;
+import com.bb.mapper.UserMapper;
+import com.bb.pojo.Role;
+import com.bb.pojo.User;
+import com.bb.pojo.UserExample;
+import com.bb.service.IRoleService;
+import com.bb.service.IUserService;
+
+@Service
+public class UserServiceImpl implements IUserService {
+	
+	@Resource
+	private UserMapper userMapper;
+	
+	@Resource
+	private IRoleService roleService;
+
+	@Override
+	public List<User> query() {
+		UserExample example = new UserExample();
+		
+		return userMapper.selectByExample(example );
+	}
+
+	@Override
+	public Integer addUser(User User) {
+		// TODO Auto-generated method stub
+		return userMapper.insertSelective(User);
+	}
+
+	@Override
+	public Integer updateUser(User User) {
+		// TODO Auto-generated method stub
+		return userMapper.updateByPrimaryKeySelective(User);
+	}
+
+	@Override
+	public Integer deleteUser(Integer id) {
+		// TODO Auto-generated method stub
+		return userMapper.deleteByPrimaryKey(id);
+	}
+
+	@Override
+	public User queryById(Integer id) {
+		// TODO Auto-generated method stub
+		return userMapper.selectByPrimaryKey(id);
+	}
+
+	@Override
+	public List<Role> queryRole() {
+		
+		return roleService.query();
+	}
+
+	/**
+	 * 添加用户
+	 *   及保持用户和角色的关联关系
+	 */
+	@Override
+	public Integer saveUserAndRole(UserDto dto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

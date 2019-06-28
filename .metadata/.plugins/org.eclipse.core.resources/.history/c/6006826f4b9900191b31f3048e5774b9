@@ -1,0 +1,5 @@
+package com.bb.dto;
+
+public class OrderDto {
+
+}

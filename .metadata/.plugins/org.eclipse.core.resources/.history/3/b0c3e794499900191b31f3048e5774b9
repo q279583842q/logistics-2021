@@ -1,0 +1,77 @@
+package com.bb.controller;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.bb.dto.CustomerDto;
+import com.bb.pojo.Customer;
+import com.bb.service.ICustomerService;
+
+@Controller
+@RequestMapping("/customer")
+public class CustomerController {
+
+	@Autowired
+	private ICustomerService customerService;
+	@RequestMapping("/query")
+	public String query(Customer customer,Model m){
+		List<CustomerDto> list = customerService.query(customer);
+		m.addAttribute("list", list);
+		return "customer/customer";
+	}
+	
+	/**
+	 * 进入添加或者修改界面前 获取必须的信息
+	 * @return
+	 */
+	@RequestMapping("/goAddOrUpdate")
+	public String goAddOrUpdate(Model m,Integer id){
+		if(id != null){
+			// 根据id查询出该记录的相关的信息
+			CustomerDto dto = customerService.queryById(id);
+			m.addAttribute("dto", dto);
+		}
+		customerService.getSalesManAndCommonInteval(m);
+		return "customer/customer_update";
+	}
+	
+	@RequestMapping("/saveOrUpdate")
+	public String saveOrUpdate(Customer c){
+		if(c.getCustomerId() != null){
+			// 表示更新数据
+			customerService.updateCustomer(c);
+		}else{
+			customerService.addCustomer(c);
+		}
+		return "redirect:/customer/query";
+	}
+	
+	@RequestMapping("/delete")
+	public void delete(Integer id,HttpServletRequest request,HttpServletResponse response) throws IOException{
+		boolean flag = customerService.deleteCutomer(id);
+		String msg = "数据删除成功!!!";
+		if(!flag){
+			// 表示删除失败，不能被删除
+			msg = "该用户不能被删除，请联系管理员！";
+		}
+		
+		response.setCharacterEncoding("utf-8");
+		response.setContentType("text/html;charset=utf-8");
+		PrintWriter out = response.getWriter();
+		out.append("<script type='text/javascript'>");
+		out.append("alert('"+msg+"');");
+		out.append("location.href='/customer/query';");
+		out.append("</script>");
+		out.flush();
+		out.close();
+	}
+}

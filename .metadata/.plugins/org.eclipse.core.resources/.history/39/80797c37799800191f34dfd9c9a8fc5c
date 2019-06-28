@@ -1,0 +1,16 @@
+package com.bb.service.impl;
+
+import java.util.List;
+
+import com.bb.pojo.Customer;
+import com.bb.service.ICustomerService;
+
+public class CustomerServiceImpl implements ICustomerService {
+
+	@Override
+	public List<Customer> query(Customer customer) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

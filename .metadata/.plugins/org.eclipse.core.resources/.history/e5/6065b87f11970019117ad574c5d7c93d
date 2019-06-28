@@ -1,0 +1,40 @@
+package com.bb.service.impl;
+
+import java.util.List;
+
+import com.bb.pojo.BasicData;
+import com.bb.service.IBasicService;
+
+public class BasicServiceImpl implements IBasicService {
+
+	@Override
+	public List<BasicData> query(BasicData bd) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Integer addBasic(BasicData bd) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Integer deleteBasicById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Integer updateBasic(BasicData bd) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public BasicData queryById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

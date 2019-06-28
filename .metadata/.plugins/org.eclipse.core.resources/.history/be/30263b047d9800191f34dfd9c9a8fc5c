@@ -1,0 +1,14 @@
+package com.bb.common;
+
+/**
+ * 系统常量
+ * @author dengp
+ *
+ */
+public class Constant {
+
+	// 定义系统的角色
+	private static final String ROLE_ADMIN = "管理员";
+	private static final String ROLE_YWY = "业务员";
+	private static final String ROLE_CZY = "操作员";
+}

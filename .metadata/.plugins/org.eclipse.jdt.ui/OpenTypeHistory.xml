@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=logistics_manager_service/src\/main\/java&lt;com.bb.service{IRoleService.java[IRoleService" modifiers="513" timestamp="1561605172035"/>
+<typeInfo handle="=logistics_manager_dao/C:\/Users\/dengp\/.m2\/repository\/com\/github\/pagehelper\/pagehelper\/4.1.6\/pagehelper-4.1.6.jar&lt;com.github.pagehelper.parser.impl(MysqlParser.class[MysqlParser" modifiers="33" timestamp="1552968114104"/>
+<typeInfo handle="=logistics_manager_dao/C:\/Users\/dengp\/.m2\/repository\/com\/github\/pagehelper\/pagehelper\/4.1.6\/pagehelper-4.1.6.jar&lt;com.github.pagehelper.parser.impl(OracleParser.class[OracleParser" modifiers="33" timestamp="1552968114104"/>
+<typeInfo handle="=logistics_manager_web/C:\/Users\/dengp\/.m2\/repository\/org\/apache\/shiro\/shiro-core\/1.2.3\/shiro-core-1.2.3.jar&lt;org.apache.shiro.util(ByteSource.class[ByteSource" modifiers="1537" timestamp="1548334558089"/>
+<typeInfo handle="=logistics_manager_service/src\/main\/java&lt;com.bb.service{IBasicService.java[IBasicService" modifiers="513" timestamp="1561604523902"/>
+<typeInfo handle="=logistics_manager_service/src\/main\/java&lt;com.bb.service{ICustomerService.java[ICustomerService" modifiers="513" timestamp="1561616895215"/>
+<typeInfo handle="=logistics_manager_service/src\/main\/java&lt;com.bb.service{IOrderService.java[IOrderService" modifiers="513" timestamp="1561684482140"/>
+</typeInfoHistroy>

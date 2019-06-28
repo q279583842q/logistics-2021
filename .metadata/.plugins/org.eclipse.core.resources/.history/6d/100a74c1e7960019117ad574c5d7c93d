@@ -1,0 +1,149 @@
+package com.bb.service.impl;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Service;
+
+import com.bb.dto.UserDto;
+import com.bb.mapper.UserMapper;
+import com.bb.pojo.Role;
+import com.bb.pojo.User;
+import com.bb.pojo.UserExample;
+import com.bb.service.IRoleService;
+import com.bb.service.IUserService;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+
+@Service
+public class UserServiceImpl implements IUserService {
+	
+	@Resource
+	private UserMapper userMapper;
+	
+	@Resource
+	private IRoleService roleService;
+
+	@Override
+	public List<User> query() {
+		UserExample example = new UserExample();
+		
+		return userMapper.selectByExample(example );
+	}
+
+	@Override
+	public Integer addUser(User user) {
+		// TODO Auto-generated method stub
+		return userMapper.insertSelective(user);
+	}
+
+	@Override
+	public Integer updateUser(User user) {
+		// TODO Auto-generated method stub
+		return userMapper.updateByPrimaryKeySelective(user);
+	}
+
+	@Override
+	public Integer deleteUser(Integer id) {
+		// 先要删除中间表的数据
+		this.deleteUserRoleByUserId(id);
+		
+		return userMapper.deleteByPrimaryKey(id);
+	}
+
+	@Override
+	public User queryById(Integer id) {
+		// TODO Auto-generated method stub
+		return userMapper.selectByPrimaryKey(id);
+	}
+
+	@Override
+	public List<Role> queryRole() {
+		
+		return roleService.query();
+	}
+
+	/**
+	 * 添加用户
+	 *   及保持用户和角色的关联关系
+	 */
+	@Override
+	public Integer saveUserAndRole(UserDto dto) {
+		// 1、保持用户信息
+		User user = dto.getUser();
+		this.addUser(user);
+		// 2.保持用户和角色的关联信息
+		List<Integer> ids = dto.getRoleIds();
+		if(ids !=null && ids.size() > 0){
+			for (Integer roleId : ids) {
+				// 保持用户和角色的关联关系
+				this.saveUserIdAndRoleId(user.getUserId(),roleId);
+			}
+		}
+		return 1;
+	}
+
+	public void saveUserIdAndRoleId(Integer userId, Integer roleId) {
+		userMapper.saveUserIdAndRoleId(userId,roleId);
+	}
+
+	@Override
+	public List<Role> queryRoleByUserId(Integer userId) {
+		
+		return roleService.queryRoleByUserId(userId);
+	}
+
+	/**
+	 * 获取更新用户信息需要的数据
+	 */
+	@Override
+	public UserDto getUpdateInfo(Integer userId) {
+		// 表示是修改操作
+		User user = this.queryById(userId);
+		// 查询用户所具有的角色信息
+		List<Role> rs = this.queryRoleByUserId(userId);
+		UserDto dto = new UserDto();
+		dto.setUser(user);
+		dto.setRoles(rs);
+		return dto;
+	}
+
+	@Override
+	public void updateUserAndRole(UserDto dto) {
+		// 1.更新用户数据
+		User user = dto.getUser();
+		this.updateUser(user);
+		// 2.更新中间表数据
+		// 先根据用户编号删除对应的关联数据
+		this.deleteUserRoleByUserId(user.getUserId());
+		// 从新添加用户和角色的关联关系
+		List<Integer> ids = dto.getRoleIds();
+		if(ids !=null && ids.size() > 0){
+			for (Integer roleId : ids) {
+				// 保持用户和角色的关联关系
+				this.saveUserIdAndRoleId(user.getUserId(),roleId);
+			}
+		}
+		
+	}
+
+	private void deleteUserRoleByUserId(Integer userId) {
+		// TODO Auto-generated method stub
+		userMapper.deleteUserRoleByUserId(userId);
+	}
+
+	/**
+	 * 分页查询用户信息
+	 */
+	@Override
+	public PageInfo<User> queryUserByPage(UserDto dto) {
+		// 设置分页的参数
+		PageHelper.startPage(dto.getPageNum(), dto.getPageSize());
+		// 执行查询操作
+		List<User> list = this.query();
+		PageInfo<User> pageInfo = new PageInfo<>(list);
+		return pageInfo;
+	}
+
+}

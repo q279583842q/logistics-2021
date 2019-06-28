@@ -1,0 +1,166 @@
+package com.bb.service.impl;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
+import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.bb.mapper.BasicDataMapper;
+import com.bb.pojo.BasicData;
+import com.bb.pojo.BasicDataExample;
+import com.bb.service.IBasicService;
+
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisPool;
+
+@Service
+public class BasicServiceImpl implements IBasicService {
+	
+	private Logger logger = Logger.getLogger(BasicServiceImpl.class);
+	
+	@Autowired
+	private BasicDataMapper dbMapper;
+	
+	@Autowired
+	private JedisPool jedisPool;
+	
+	private static final String KEY_PREFIX="basicData:";
+
+	/**
+	 * 13	12	预付全款	
+	 * 14	12	预付定金&到付全款	
+	 * 15	12	到付
+	 * 注意key的命名的规则:
+	 *    basicData:13  bascId:13 parentId:12 bascName:预付款	bascDesc:null
+	 */
+	@Override
+	public List<BasicData> query(BasicData bd) {
+		// 1.从redis缓存中获取基础数据
+		Jedis jedis = jedisPool.getResource();
+		
+		// 获取到所有的满足条件的key
+		Set<String> keys = jedis.keys(KEY_PREFIX+"*");
+		List<BasicData> list = new ArrayList<>();
+		if(keys == null || keys.size() == 0){
+			
+			// 表示缓存中没有数据，去数据库中查询
+			BasicDataExample example = new BasicDataExample();
+			list = dbMapper.selectByExample(example );
+			// 将查询的数据保存到缓存中
+			for (BasicData data : list) {
+				String key = KEY_PREFIX+data.getBaseId();
+				jedis.hset(key, "bascId", data.getBaseId()+"");
+				jedis.hset(key, "bascName", data.getBaseName());
+				jedis.hset(key, "parentId", data.getParentId()+"");
+				jedis.hset(key, "baseDesc", data.getBaseDesc()+"");
+			}
+			logger.info("基础数据：从数据库中查询....");
+		}else{
+			// 从缓存中获取数据返回
+			for (String key : keys) {
+				BasicData b = new BasicData();
+				b.setBaseId(Integer.parseInt(jedis.hget(key, "bascId")));
+				b.setBaseName(jedis.hget(key, "bascName"));
+				String parentId = jedis.hget(key, "parentId");
+				logger.info("parentId:"+parentId);
+				//b.setParentId();
+				b.setParentId(parserStringToInteger(parentId));
+				b.setBaseDesc(jedis.hget(key, "baseDesc"));
+				list.add(b);
+			}
+			logger.info("基础数据：从Redis缓存中获取....");
+		}
+		return list;
+	}
+	
+	private Integer parserStringToInteger(String msg){
+		try{
+			return Integer.parseInt(msg);
+		}catch(Exception e){
+			logger.info("基础数据:大类");
+		}
+		return null;
+	}
+	
+	
+
+	@Override
+	public Integer addBasic(BasicData bd) {
+		// 1.清空redis中基础数据的内容
+		this.clearCache(KEY_PREFIX);
+		// 2.保存数据到数据库中
+		return dbMapper.insertSelective(bd);
+	}
+	
+	public void clearCache(String keyPrefix){
+		Jedis jedis = jedisPool.getResource();
+		// 获取所有的key
+		Set<String> keys = jedis.keys(keyPrefix+"*");
+		for (String key : keys) {
+			jedis.del(key);
+		}
+	}
+
+	@Override
+	public Integer deleteBasicById(Integer id) {
+		// 1.清空redis中基础数据的内容
+		this.clearCache(KEY_PREFIX);
+		// 2.保存数据到数据库中
+		return dbMapper.deleteByPrimaryKey(id);
+	}
+
+	@Override
+	public Integer updateBasic(BasicData bd) {
+		// 1.清空redis中基础数据的内容
+		this.clearCache(KEY_PREFIX);
+		// 2.保存数据到数据库中
+		return dbMapper.updateByPrimaryKeySelective(bd);
+	}
+
+	@Override
+	public BasicData queryById(Integer id) {
+		// 1.从redis中获取数据
+		Jedis jedis = jedisPool.getResource();
+		String key = KEY_PREFIX+id;
+		// 判断key是否存在
+		Boolean flag = jedis.exists(key);
+		BasicData data = new BasicData();
+		if(flag){
+			// 缓存中取数据
+			String bascId = jedis.hget(key, "bascId");
+			String bascName = jedis.hget(key, "bascName");
+			String parentId = jedis.hget(key, "parentId");
+			String bascDesc = jedis.hget(key, "baseDesc");
+			data.setBaseId(parserStringToInteger(bascId));
+			data.setBaseName(bascName);
+			data.setParentId(parserStringToInteger(parentId));
+			data.setBaseDesc(bascDesc);
+		}else{
+			// 数据库中查询
+			data = dbMapper.selectByPrimaryKey(id);
+		}
+		return data;
+	}
+
+	@Override
+	public List<BasicData> queryParentData() {
+		BasicDataExample example = new BasicDataExample();
+		example.createCriteria().andParentIdIsNull();
+		
+		return dbMapper.selectByExample(example );
+	}
+
+	/**
+	 * 根据类别名称查询出对应的类别数据
+	 *   常用区间
+	 */
+	@Override
+	public List<BasicData> queryBase(String typeName) {
+		
+		return null;
+	}
+
+}

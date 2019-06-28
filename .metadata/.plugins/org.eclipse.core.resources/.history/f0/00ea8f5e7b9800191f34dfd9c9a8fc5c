@@ -1,0 +1,15 @@
+package com.bb.service;
+
+import java.util.List;
+
+import com.bb.pojo.Customer;
+
+/**
+ * 客户业务层 接口
+ * @author dengp
+ *
+ */
+public interface ICustomerService {
+
+	public List<Customer> query(Customer customer);
+}

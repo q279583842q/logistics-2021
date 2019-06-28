@@ -1,0 +1,42 @@
+package com.bb.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.bb.dto.CustomerDto;
+import com.bb.pojo.Customer;
+import com.bb.service.ICustomerService;
+
+@Controller
+@RequestMapping("/customer")
+public class CustomerController {
+
+	@Autowired
+	private ICustomerService customerService;
+	@RequestMapping("/query")
+	public String query(Customer customer,Model m){
+		List<CustomerDto> list = customerService.query(customer);
+		m.addAttribute("list", list);
+		return "customer/customer";
+	}
+	
+	/**
+	 * 进入添加或者修改界面前 获取必须的信息
+	 * @return
+	 */
+	@RequestMapping("/goAddOrUpdate")
+	public String goAddOrUpdate(Model m){
+		customerService.getSalesManAndCommonInteval(m);
+		return "customer/customer_update";
+	}
+	
+	@RequestMapping("/saveOrUpdate")
+	public String saveOrUpdate(Customer c){
+		customerService.addCustomer(c);
+		return "redirect:/customer/query";
+	}
+}

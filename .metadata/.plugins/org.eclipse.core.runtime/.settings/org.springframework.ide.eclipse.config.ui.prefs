@@ -1,0 +1,5 @@
+//com.springsource.config.ui.prefs.activePageIndex\:/logistics_manager_web/src/main/resources/spring/applicationContext-mybatis.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/logistics_manager_web/src/main/resources/spring/applicationContext-redis.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/logistics_manager_web/src/main/resources/spring/applicationContext-shiro.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/logistics_manager_web/src/main/resources/spring/spring-mvc.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+eclipse.preferences.version=1

@@ -1,0 +1,19 @@
+package com.bb.dto;
+
+import com.bb.pojo.Customer;
+
+/**
+ * 客户信息的传输对象
+ * @author dengp
+ *
+ */
+public class CustomerDto extends BasePage{
+
+	private Customer customer;
+	
+	// 常用区间
+	private String commonInterval;
+	
+	// 业务员
+	private String realName;
+}

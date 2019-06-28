@@ -1,0 +1,46 @@
+package com.bb.controller;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.bb.dto.UserDto;
+import com.bb.pojo.Role;
+import com.bb.pojo.User;
+import com.bb.service.IUserService;
+
+@Controller
+@RequestMapping("/user")
+public class UserController {
+
+	@Resource
+	private IUserService userService;
+	
+	@RequestMapping("/query")
+	public String query(Model m){
+		m.addAttribute("list", userService.query());
+		return "user/user";
+	}
+	
+	/**
+	 * 进入添加或者修改的方法之前跳转的方法
+	 * @return
+	 */
+	@RequestMapping("/goAddOrUpdate")
+	public String goAddOrUpdate(Model m){
+		// 查询所有的角色信息
+		List<Role> roles = userService.queryRole();
+		m.addAttribute("roles", roles);
+		return "user/user_update";
+	}
+	@RequestMapping("/saveOrUpdate")
+	public String saveOrUpdate(UserDto dto){
+		
+		return "redirect:/user/query";
+	}
+	
+}

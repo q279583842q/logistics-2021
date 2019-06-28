@@ -1,0 +1,104 @@
+package com.bb.service.impl;
+
+import java.util.List;
+
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.subject.Subject;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.ui.Model;
+
+import com.bb.common.Constant;
+import com.bb.dto.CustomerDto;
+import com.bb.mapper.CustomerMapper;
+import com.bb.pojo.BasicData;
+import com.bb.pojo.Customer;
+import com.bb.pojo.CustomerExample;
+import com.bb.pojo.User;
+import com.bb.service.IBasicService;
+import com.bb.service.ICustomerService;
+import com.bb.service.IUserService;
+
+@Service
+public class CustomerServiceImpl implements ICustomerService {
+	
+	@Autowired
+	private CustomerMapper customerMapper;
+	
+	@Autowired
+	private IBasicService basicService;
+	
+	@Autowired
+	private IUserService userService;
+
+	/**
+	 * 查询客户信息
+	 *    业务员：只能查询自己管理的客户
+	 *    操作员和管理员：可以查看所有的客户
+	 *    非以上角色是查看不了客户信息的
+	 */
+	@Override
+	public List<CustomerDto> query(Customer customer) {
+		
+		CustomerExample example = new CustomerExample();
+		// 获取当前登录的用户信息
+		Subject subject = SecurityUtils.getSubject();
+		User user = (User) subject.getPrincipal();
+		if(subject.hasRole(Constant.ROLE_YWY)){
+			// 业务员的情况 根据业务员编号查询
+			example.createCriteria().andUserIdEqualTo(user.getUserId());
+			return customerMapper.selectByExample(example );
+		}else if(subject.hasRole(Constant.ROLE_CZY) || subject.hasRole(Constant.ROLE_ADMIN)){
+			// 查询所有
+			return customerMapper.selectByExample(example );
+		}
+		// 既不是业务员也不是操作员和管理员
+		return null;
+	}
+
+	@Override
+	public void getSalesManAndCommonInteval(Model m) {
+		
+		// 查询出所有的业务员和常用区间
+		List<BasicData> l1 = basicService.queryBase(Constant.BASE_COMMON_INTERVAL);
+		// 所有的业务员  根据业务员角色名称
+		List<User> l2 = userService.queryByRole(Constant.ROLE_YWY);
+		m.addAttribute("commons", l1);
+		m.addAttribute("users", l2);
+	}
+
+	@Override
+	public void addCustomer(Customer c) {
+		// TODO Auto-generated method stub
+		customerMapper.insertSelective(c);
+	}
+
+	@Override
+	public CustomerDto queryById(Integer id) {
+		// TODO Auto-generated method stub
+		return customerMapper.selectByPrimaryKey(id);
+	}
+
+	@Override
+	public void updateCustomer(Customer c) {
+		customerMapper.updateByPrimaryKeySelective(c);
+		
+	}
+
+	/**
+	 * 删除客户信息
+	 *  如果客户已经有订单生成  那么肯定不能删除该信息
+	 */
+	@Override
+	public boolean deleteCutomer(Integer id) {
+		// 判断该客户是否有订单生成
+		int count = customerMapper.hashOrder(id);
+		if(count == 0){
+			// 表示可以删除
+			customerMapper.deleteByPrimaryKey(id);
+			return true;
+		}
+		return false;
+	}
+
+}

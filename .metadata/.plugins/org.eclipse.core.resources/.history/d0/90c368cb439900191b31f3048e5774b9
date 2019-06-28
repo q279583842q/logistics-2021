@@ -1,0 +1,60 @@
+package com.bb.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.ui.Model;
+
+import com.bb.common.Constant;
+import com.bb.dto.CustomerDto;
+import com.bb.pojo.BasicData;
+import com.bb.pojo.User;
+import com.bb.service.IBasicService;
+import com.bb.service.ICustomerService;
+import com.bb.service.IOrderService;
+import com.bb.service.IUserService;
+
+@Service
+public class OrderServiceImpl implements IOrderService {
+	
+	@Autowired
+	private IUserService userService;
+	
+	@Autowired
+	private ICustomerService customerService;
+	
+	@Autowired
+	private IBasicService basicService;
+	/**
+	 * 新增订单
+	 *    业务员
+	 *    客户信息
+	 *    常用区间
+	 *    付款方式
+	 *    货运方式
+	 *    取件方式
+	 *    单位
+	 *    
+	 */
+	@Override
+	public void getAddOrUpdateInfo(Model m, Integer orderId) {
+		// 1.查询所有的业务员
+		List<User> sales = userService.queryByRole(Constant.ROLE_YWY);
+		// 2.查询所有的客户信息
+		List<CustomerDto> customers = customerService.query(null);
+		// 3.查询常用的区间
+		List<BasicData> commons = basicService.queryBase(Constant.BASE_COMMON_INTERVAL);
+		// 4.付款方式
+		List<BasicData> payments = basicService.queryBase(Constant.BASIC_PAYMENT_TYPE);
+		// 5.货运方式
+		List<BasicData> freights = basicService.queryBase(Constant.BASIC_FREIGHT_TYPE);
+		// 6.取件方式
+		List<BasicData> fetchs = basicService.queryBase(Constant.BASIC_FETCH_TYPE);
+		// 7.单位
+		List<BasicData> units = basicService.queryBase(Constant.BASIC_UNIT);
+		
+		
+	}
+
+}

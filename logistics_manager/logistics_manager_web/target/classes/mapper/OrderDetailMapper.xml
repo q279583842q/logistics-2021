@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bb.mapper.OrderDetailMapper">
+  <resultMap id="BaseResultMap" type="com.bb.pojo.OrderDetail">
+    <id column="order_detail_id" jdbcType="INTEGER" property="orderDetailId" />
+    <result column="order_id" jdbcType="INTEGER" property="orderId" />
+    <result column="goods_name" jdbcType="VARCHAR" property="goodsName" />
+    <result column="goods_number" jdbcType="INTEGER" property="goodsNumber" />
+    <result column="goods_unit" jdbcType="INTEGER" property="goodsUnit" />
+    <result column="goods_unit_price" jdbcType="DECIMAL" property="goodsUnitPrice" />
+    <result column="goods_total" jdbcType="DECIMAL" property="goodsTotal" />
+    <result column="goods_remark" jdbcType="VARCHAR" property="goodsRemark" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    order_detail_id, order_id, goods_name, goods_number, goods_unit, goods_unit_price, 
+    goods_total, goods_remark
+  </sql>
+  <select id="selectByExample" parameterType="com.bb.pojo.OrderDetailExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from t_order_detail
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_order_detail
+    where order_detail_id = #{orderDetailId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from t_order_detail
+    where order_detail_id = #{orderDetailId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.bb.pojo.OrderDetailExample">
+    delete from t_order_detail
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.bb.pojo.OrderDetail">
+    insert into t_order_detail (order_detail_id, order_id, goods_name, 
+      goods_number, goods_unit, goods_unit_price, 
+      goods_total, goods_remark)
+    values (#{orderDetailId,jdbcType=INTEGER}, #{orderId,jdbcType=INTEGER}, #{goodsName,jdbcType=VARCHAR}, 
+      #{goodsNumber,jdbcType=INTEGER}, #{goodsUnit,jdbcType=INTEGER}, #{goodsUnitPrice,jdbcType=DECIMAL}, 
+      #{goodsTotal,jdbcType=DECIMAL}, #{goodsRemark,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.bb.pojo.OrderDetail">
+    insert into t_order_detail
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="orderDetailId != null">
+        order_detail_id,
+      </if>
+      <if test="orderId != null">
+        order_id,
+      </if>
+      <if test="goodsName != null">
+        goods_name,
+      </if>
+      <if test="goodsNumber != null">
+        goods_number,
+      </if>
+      <if test="goodsUnit != null">
+        goods_unit,
+      </if>
+      <if test="goodsUnitPrice != null">
+        goods_unit_price,
+      </if>
+      <if test="goodsTotal != null">
+        goods_total,
+      </if>
+      <if test="goodsRemark != null">
+        goods_remark,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="orderDetailId != null">
+        #{orderDetailId,jdbcType=INTEGER},
+      </if>
+      <if test="orderId != null">
+        #{orderId,jdbcType=INTEGER},
+      </if>
+      <if test="goodsName != null">
+        #{goodsName,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsNumber != null">
+        #{goodsNumber,jdbcType=INTEGER},
+      </if>
+      <if test="goodsUnit != null">
+        #{goodsUnit,jdbcType=INTEGER},
+      </if>
+      <if test="goodsUnitPrice != null">
+        #{goodsUnitPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="goodsTotal != null">
+        #{goodsTotal,jdbcType=DECIMAL},
+      </if>
+      <if test="goodsRemark != null">
+        #{goodsRemark,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.bb.pojo.OrderDetailExample" resultType="java.lang.Long">
+    select count(*) from t_order_detail
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update t_order_detail
+    <set>
+      <if test="record.orderDetailId != null">
+        order_detail_id = #{record.orderDetailId,jdbcType=INTEGER},
+      </if>
+      <if test="record.orderId != null">
+        order_id = #{record.orderId,jdbcType=INTEGER},
+      </if>
+      <if test="record.goodsName != null">
+        goods_name = #{record.goodsName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.goodsNumber != null">
+        goods_number = #{record.goodsNumber,jdbcType=INTEGER},
+      </if>
+      <if test="record.goodsUnit != null">
+        goods_unit = #{record.goodsUnit,jdbcType=INTEGER},
+      </if>
+      <if test="record.goodsUnitPrice != null">
+        goods_unit_price = #{record.goodsUnitPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="record.goodsTotal != null">
+        goods_total = #{record.goodsTotal,jdbcType=DECIMAL},
+      </if>
+      <if test="record.goodsRemark != null">
+        goods_remark = #{record.goodsRemark,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update t_order_detail
+    set order_detail_id = #{record.orderDetailId,jdbcType=INTEGER},
+      order_id = #{record.orderId,jdbcType=INTEGER},
+      goods_name = #{record.goodsName,jdbcType=VARCHAR},
+      goods_number = #{record.goodsNumber,jdbcType=INTEGER},
+      goods_unit = #{record.goodsUnit,jdbcType=INTEGER},
+      goods_unit_price = #{record.goodsUnitPrice,jdbcType=DECIMAL},
+      goods_total = #{record.goodsTotal,jdbcType=DECIMAL},
+      goods_remark = #{record.goodsRemark,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.bb.pojo.OrderDetail">
+    update t_order_detail
+    <set>
+      <if test="orderId != null">
+        order_id = #{orderId,jdbcType=INTEGER},
+      </if>
+      <if test="goodsName != null">
+        goods_name = #{goodsName,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsNumber != null">
+        goods_number = #{goodsNumber,jdbcType=INTEGER},
+      </if>
+      <if test="goodsUnit != null">
+        goods_unit = #{goodsUnit,jdbcType=INTEGER},
+      </if>
+      <if test="goodsUnitPrice != null">
+        goods_unit_price = #{goodsUnitPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="goodsTotal != null">
+        goods_total = #{goodsTotal,jdbcType=DECIMAL},
+      </if>
+      <if test="goodsRemark != null">
+        goods_remark = #{goodsRemark,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where order_detail_id = #{orderDetailId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.bb.pojo.OrderDetail">
+    update t_order_detail
+    set order_id = #{orderId,jdbcType=INTEGER},
+      goods_name = #{goodsName,jdbcType=VARCHAR},
+      goods_number = #{goodsNumber,jdbcType=INTEGER},
+      goods_unit = #{goodsUnit,jdbcType=INTEGER},
+      goods_unit_price = #{goodsUnitPrice,jdbcType=DECIMAL},
+      goods_total = #{goodsTotal,jdbcType=DECIMAL},
+      goods_remark = #{goodsRemark,jdbcType=VARCHAR}
+    where order_detail_id = #{orderDetailId,jdbcType=INTEGER}
+  </update>
+</mapper>

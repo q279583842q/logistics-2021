@@ -1,0 +1,23 @@
+package com.bb.service;
+
+import java.util.List;
+
+import org.springframework.ui.Model;
+
+import com.bb.dto.CustomerDto;
+import com.bb.pojo.Customer;
+
+/**
+ * 客户业务层 接口
+ * @author dengp
+ *
+ */
+public interface ICustomerService {
+
+	public List<CustomerDto> query(Customer customer);
+
+	public void getSalesManAndCommonInteval(Model m);
+
+	public void addCustomer(Customer c);
+
+}

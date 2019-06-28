@@ -1,0 +1,21 @@
+package com.bb.dto;
+
+import java.util.List;
+
+import com.bb.pojo.Order;
+import com.bb.pojo.OrderDetail;
+
+public class OrderDto extends Order{
+
+	private List<OrderDetail> orderDetials;
+
+	public List<OrderDetail> getOrderDetials() {
+		return orderDetials;
+	}
+
+	public void setOrderDetials(List<OrderDetail> orderDetials) {
+		this.orderDetials = orderDetials;
+	}
+	
+	
+}

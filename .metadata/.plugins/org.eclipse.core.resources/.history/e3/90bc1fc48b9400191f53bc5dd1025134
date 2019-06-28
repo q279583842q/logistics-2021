@@ -1,0 +1,24 @@
+package com.bb.controller;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.bb.service.IUserService;
+
+@Controller
+@RequestMapping("/user")
+public class UserController {
+
+	@Resource
+	private IUserService userService;
+	
+	@RequestMapping("/query")
+	public String query(Model m){
+		m.addAttribute("list", userService.query());
+		return "user/user";
+	}
+	
+}

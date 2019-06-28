@@ -1,0 +1,51 @@
+package com.bb.service.impl;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Service;
+
+import com.bb.mapper.RoleMapper;
+import com.bb.pojo.Role;
+import com.bb.pojo.RoleExample;
+import com.bb.service.IRoleService;
+
+@Service
+public class RoleServiceImpl implements IRoleService {
+	
+	@Resource
+	private RoleMapper roleMapper;
+
+	@Override
+	public List<Role> query() {
+		RoleExample example = new RoleExample();
+		
+		return roleMapper.selectByExample(example );
+	}
+
+	@Override
+	public Integer addRole(Role role) {
+		// TODO Auto-generated method stub
+		return roleMapper.insertSelective(role);
+	}
+
+	@Override
+	public Integer updateRole(Role role) {
+		// TODO Auto-generated method stub
+		return roleMapper.updateByPrimaryKeySelective(role);
+	}
+
+	@Override
+	public Integer deleteRole(Integer id) {
+		// TODO Auto-generated method stub
+		return roleMapper.deleteByPrimaryKey(id);
+	}
+
+	@Override
+	public Role queryById(Integer id) {
+		// TODO Auto-generated method stub
+		return roleMapper.selectByPrimaryKey(id);
+	}
+
+}

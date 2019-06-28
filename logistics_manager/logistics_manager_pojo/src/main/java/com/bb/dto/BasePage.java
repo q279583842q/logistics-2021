@@ -1,0 +1,38 @@
+package com.bb.dto;
+
+public class BasePage {
+
+	// 当前页 默认为1
+	private Integer pageNum = 1;
+	// 每页显示的条数 默认5条
+	private Integer pageSize = 5;
+	
+	// 查询信息
+	private String selectKey;
+
+	public Integer getPageNum() {
+		return pageNum;
+	}
+
+	public void setPageNum(Integer pageNum) {
+		this.pageNum = pageNum;
+	}
+
+	public Integer getPageSize() {
+		return pageSize;
+	}
+
+	public void setPageSize(Integer pageSize) {
+		this.pageSize = pageSize;
+	}
+
+	public String getSelectKey() {
+		return selectKey;
+	}
+
+	public void setSelectKey(String selectKey) {
+		this.selectKey = selectKey;
+	}
+	
+	
+}

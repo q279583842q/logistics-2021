@@ -1,0 +1,5 @@
+package com.bb.service;
+
+public interface IRoleService {
+
+}

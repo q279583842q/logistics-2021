@@ -1,0 +1,29 @@
+package com.bb.service.impl;
+
+import org.springframework.stereotype.Service;
+import org.springframework.ui.Model;
+
+import com.bb.service.IOrderService;
+
+@Service
+public class OrderServiceImpl implements IOrderService {
+	
+	
+	/**
+	 * 新增订单
+	 *    业务员
+	 *    客户信息
+	 *    常用区间
+	 *    付款方式
+	 *    货运方式
+	 *    区间方式
+	 *    单位
+	 *    
+	 */
+	@Override
+	public void getAddOrUpdateInfo(Model m, Integer orderId) {
+		// 1.查询所有的业务员
+
+	}
+
+}

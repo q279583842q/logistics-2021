@@ -1,0 +1,15 @@
+package com.bb.service.impl;
+
+import org.springframework.ui.Model;
+
+import com.bb.service.IOrderService;
+
+public class OrderServiceImpl implements IOrderService {
+
+	@Override
+	public void getAddOrUpdateInfo(Model m, Integer orderId) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

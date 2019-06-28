@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>物流系统:</h1>
+	<script type="text/javascript"></script>
 </body>
 </html>

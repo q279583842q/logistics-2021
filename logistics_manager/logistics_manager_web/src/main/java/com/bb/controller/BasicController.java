@@ -1,0 +1,63 @@
+package com.bb.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.bb.pojo.BasicData;
+import com.bb.service.IBasicService;
+
+@Controller
+@RequestMapping("/basic")
+public class BasicController {
+	
+	@Autowired
+	private IBasicService basicService;
+	
+	@RequestMapping("/query")
+	public String query(BasicData bd,Model m){
+		m.addAttribute("list", basicService.query(bd));
+		return "basic/basic";
+	}
+	
+	@RequestMapping("/goAddOrUpdate")
+	public String goAddOrUpdate(Model m,Integer baseId){
+		// 查询出所有的大类数据
+		List<BasicData> parents = basicService.queryParentData();
+		m.addAttribute("parents", parents);
+		if(baseId != null){
+			// 表示需要根据id去查询修改的基础数据的信息
+			BasicData data = basicService.queryById(baseId);
+			m.addAttribute("data", data);
+		}
+		return "basic/basic_update";
+	}
+	@RequestMapping("/saveOrUpdate")
+	public String saveOrUpdate(BasicData bd){
+		if(bd.getParentId() == -1){
+			bd.setParentId(null);
+		}
+		if(bd.getBaseId() != null){
+			// 表示更新
+			basicService.updateBasic(bd);
+		}else{
+			basicService.addBasic(bd);
+		}
+		
+		
+		return "redirect:/basic/query";
+	}
+	
+	@RequestMapping("/delete")
+	public String delete(Integer id){
+		basicService.deleteBasicById(id);
+		
+		
+		return "redirect:/basic/query";
+	}
+
+
+}

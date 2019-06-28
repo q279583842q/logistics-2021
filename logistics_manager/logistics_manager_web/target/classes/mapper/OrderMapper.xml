@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bb.mapper.OrderMapper">
+  <resultMap id="BaseResultMap" type="com.bb.pojo.Order">
+    <id column="order_id" jdbcType="INTEGER" property="orderId" />
+    <result column="customer_id" jdbcType="INTEGER" property="customerId" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="shipping_address" jdbcType="VARCHAR" property="shippingAddress" />
+    <result column="shipping_name" jdbcType="VARCHAR" property="shippingName" />
+    <result column="shipping_phone" jdbcType="VARCHAR" property="shippingPhone" />
+    <result column="take_name" jdbcType="VARCHAR" property="takeName" />
+    <result column="take_address" jdbcType="VARCHAR" property="takeAddress" />
+    <result column="take_phone" jdbcType="VARCHAR" property="takePhone" />
+    <result column="order_desc" jdbcType="VARCHAR" property="orderDesc" />
+    <result column="order_status" jdbcType="TINYINT" property="orderStatus" />
+    <result column="payment_method_id" jdbcType="INTEGER" property="paymentMethodId" />
+    <result column="dest_area_id" jdbcType="INTEGER" property="destAreaId" />
+    <result column="trans_method_id" jdbcType="INTEGER" property="transMethodId" />
+    <result column="take_method_id" jdbcType="INTEGER" property="takeMethodId" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    order_id, customer_id, user_id, shipping_address, shipping_name, shipping_phone, 
+    take_name, take_address, take_phone, order_desc, order_status, payment_method_id, 
+    dest_area_id, trans_method_id, take_method_id
+  </sql>
+  <select id="selectByExample" parameterType="com.bb.pojo.OrderExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from t_order
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_order
+    where order_id = #{orderId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from t_order
+    where order_id = #{orderId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.bb.pojo.OrderExample">
+    delete from t_order
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.bb.pojo.Order">
+    insert into t_order (order_id, customer_id, user_id, 
+      shipping_address, shipping_name, shipping_phone, 
+      take_name, take_address, take_phone, 
+      order_desc, order_status, payment_method_id, 
+      dest_area_id, trans_method_id, take_method_id
+      )
+    values (#{orderId,jdbcType=INTEGER}, #{customerId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, 
+      #{shippingAddress,jdbcType=VARCHAR}, #{shippingName,jdbcType=VARCHAR}, #{shippingPhone,jdbcType=VARCHAR}, 
+      #{takeName,jdbcType=VARCHAR}, #{takeAddress,jdbcType=VARCHAR}, #{takePhone,jdbcType=VARCHAR}, 
+      #{orderDesc,jdbcType=VARCHAR}, #{orderStatus,jdbcType=TINYINT}, #{paymentMethodId,jdbcType=INTEGER}, 
+      #{destAreaId,jdbcType=INTEGER}, #{transMethodId,jdbcType=INTEGER}, #{takeMethodId,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.bb.pojo.Order" useGeneratedKeys="true" keyProperty="orderId">
+    insert into t_order
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="orderId != null">
+        order_id,
+      </if>
+      <if test="customerId != null">
+        customer_id,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="shippingAddress != null">
+        shipping_address,
+      </if>
+      <if test="shippingName != null">
+        shipping_name,
+      </if>
+      <if test="shippingPhone != null">
+        shipping_phone,
+      </if>
+      <if test="takeName != null">
+        take_name,
+      </if>
+      <if test="takeAddress != null">
+        take_address,
+      </if>
+      <if test="takePhone != null">
+        take_phone,
+      </if>
+      <if test="orderDesc != null">
+        order_desc,
+      </if>
+      <if test="orderStatus != null">
+        order_status,
+      </if>
+      <if test="paymentMethodId != null">
+        payment_method_id,
+      </if>
+      <if test="destAreaId != null">
+        dest_area_id,
+      </if>
+      <if test="transMethodId != null">
+        trans_method_id,
+      </if>
+      <if test="takeMethodId != null">
+        take_method_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="orderId != null">
+        #{orderId,jdbcType=INTEGER},
+      </if>
+      <if test="customerId != null">
+        #{customerId,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="shippingAddress != null">
+        #{shippingAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="shippingName != null">
+        #{shippingName,jdbcType=VARCHAR},
+      </if>
+      <if test="shippingPhone != null">
+        #{shippingPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="takeName != null">
+        #{takeName,jdbcType=VARCHAR},
+      </if>
+      <if test="takeAddress != null">
+        #{takeAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="takePhone != null">
+        #{takePhone,jdbcType=VARCHAR},
+      </if>
+      <if test="orderDesc != null">
+        #{orderDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="orderStatus != null">
+        #{orderStatus,jdbcType=TINYINT},
+      </if>
+      <if test="paymentMethodId != null">
+        #{paymentMethodId,jdbcType=INTEGER},
+      </if>
+      <if test="destAreaId != null">
+        #{destAreaId,jdbcType=INTEGER},
+      </if>
+      <if test="transMethodId != null">
+        #{transMethodId,jdbcType=INTEGER},
+      </if>
+      <if test="takeMethodId != null">
+        #{takeMethodId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.bb.pojo.OrderExample" resultType="java.lang.Long">
+    select count(*) from t_order
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update t_order
+    <set>
+      <if test="record.orderId != null">
+        order_id = #{record.orderId,jdbcType=INTEGER},
+      </if>
+      <if test="record.customerId != null">
+        customer_id = #{record.customerId,jdbcType=INTEGER},
+      </if>
+      <if test="record.userId != null">
+        user_id = #{record.userId,jdbcType=INTEGER},
+      </if>
+      <if test="record.shippingAddress != null">
+        shipping_address = #{record.shippingAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="record.shippingName != null">
+        shipping_name = #{record.shippingName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.shippingPhone != null">
+        shipping_phone = #{record.shippingPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="record.takeName != null">
+        take_name = #{record.takeName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.takeAddress != null">
+        take_address = #{record.takeAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="record.takePhone != null">
+        take_phone = #{record.takePhone,jdbcType=VARCHAR},
+      </if>
+      <if test="record.orderDesc != null">
+        order_desc = #{record.orderDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="record.orderStatus != null">
+        order_status = #{record.orderStatus,jdbcType=TINYINT},
+      </if>
+      <if test="record.paymentMethodId != null">
+        payment_method_id = #{record.paymentMethodId,jdbcType=INTEGER},
+      </if>
+      <if test="record.destAreaId != null">
+        dest_area_id = #{record.destAreaId,jdbcType=INTEGER},
+      </if>
+      <if test="record.transMethodId != null">
+        trans_method_id = #{record.transMethodId,jdbcType=INTEGER},
+      </if>
+      <if test="record.takeMethodId != null">
+        take_method_id = #{record.takeMethodId,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update t_order
+    set order_id = #{record.orderId,jdbcType=INTEGER},
+      customer_id = #{record.customerId,jdbcType=INTEGER},
+      user_id = #{record.userId,jdbcType=INTEGER},
+      shipping_address = #{record.shippingAddress,jdbcType=VARCHAR},
+      shipping_name = #{record.shippingName,jdbcType=VARCHAR},
+      shipping_phone = #{record.shippingPhone,jdbcType=VARCHAR},
+      take_name = #{record.takeName,jdbcType=VARCHAR},
+      take_address = #{record.takeAddress,jdbcType=VARCHAR},
+      take_phone = #{record.takePhone,jdbcType=VARCHAR},
+      order_desc = #{record.orderDesc,jdbcType=VARCHAR},
+      order_status = #{record.orderStatus,jdbcType=TINYINT},
+      payment_method_id = #{record.paymentMethodId,jdbcType=INTEGER},
+      dest_area_id = #{record.destAreaId,jdbcType=INTEGER},
+      trans_method_id = #{record.transMethodId,jdbcType=INTEGER},
+      take_method_id = #{record.takeMethodId,jdbcType=INTEGER}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.bb.pojo.Order">
+    update t_order
+    <set>
+      <if test="customerId != null">
+        customer_id = #{customerId,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="shippingAddress != null">
+        shipping_address = #{shippingAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="shippingName != null">
+        shipping_name = #{shippingName,jdbcType=VARCHAR},
+      </if>
+      <if test="shippingPhone != null">
+        shipping_phone = #{shippingPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="takeName != null">
+        take_name = #{takeName,jdbcType=VARCHAR},
+      </if>
+      <if test="takeAddress != null">
+        take_address = #{takeAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="takePhone != null">
+        take_phone = #{takePhone,jdbcType=VARCHAR},
+      </if>
+      <if test="orderDesc != null">
+        order_desc = #{orderDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="orderStatus != null">
+        order_status = #{orderStatus,jdbcType=TINYINT},
+      </if>
+      <if test="paymentMethodId != null">
+        payment_method_id = #{paymentMethodId,jdbcType=INTEGER},
+      </if>
+      <if test="destAreaId != null">
+        dest_area_id = #{destAreaId,jdbcType=INTEGER},
+      </if>
+      <if test="transMethodId != null">
+        trans_method_id = #{transMethodId,jdbcType=INTEGER},
+      </if>
+      <if test="takeMethodId != null">
+        take_method_id = #{takeMethodId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where order_id = #{orderId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.bb.pojo.Order">
+    update t_order
+    set customer_id = #{customerId,jdbcType=INTEGER},
+      user_id = #{userId,jdbcType=INTEGER},
+      shipping_address = #{shippingAddress,jdbcType=VARCHAR},
+      shipping_name = #{shippingName,jdbcType=VARCHAR},
+      shipping_phone = #{shippingPhone,jdbcType=VARCHAR},
+      take_name = #{takeName,jdbcType=VARCHAR},
+      take_address = #{takeAddress,jdbcType=VARCHAR},
+      take_phone = #{takePhone,jdbcType=VARCHAR},
+      order_desc = #{orderDesc,jdbcType=VARCHAR},
+      order_status = #{orderStatus,jdbcType=TINYINT},
+      payment_method_id = #{paymentMethodId,jdbcType=INTEGER},
+      dest_area_id = #{destAreaId,jdbcType=INTEGER},
+      trans_method_id = #{transMethodId,jdbcType=INTEGER},
+      take_method_id = #{takeMethodId,jdbcType=INTEGER}
+    where order_id = #{orderId,jdbcType=INTEGER}
+  </update>
+</mapper>

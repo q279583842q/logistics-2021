@@ -1,0 +1,47 @@
+package com.bb.dto;
+
+import java.util.List;
+
+import com.bb.pojo.Role;
+import com.bb.pojo.User;
+
+/**
+ * 用户的数据传输对象
+ * @author dengp
+ *
+ */
+public class UserDto extends BasePage{
+	
+	private User user;
+
+	private List<Integer> roleIds;
+	
+	private List<Role> roles;
+	
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	public List<Integer> getRoleIds() {
+		return roleIds;
+	}
+
+	public void setRoleIds(List<Integer> roleIds) {
+		this.roleIds = roleIds;
+	}
+
+	public List<Role> getRoles() {
+		return roles;
+	}
+
+	public void setRoles(List<Role> roles) {
+		this.roles = roles;
+	}
+	
+	
+}

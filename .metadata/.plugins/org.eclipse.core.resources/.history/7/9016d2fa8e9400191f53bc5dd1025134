@@ -1,0 +1,10 @@
+package com.bb.dto;
+
+import java.util.List;
+
+import com.bb.pojo.User;
+
+public class UserDto {
+
+	private List<Integer> roleIds;
+}
