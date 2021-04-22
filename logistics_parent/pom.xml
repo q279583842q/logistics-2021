@@ -34,7 +34,7 @@
 		<activemq.version>5.11.2</activemq.version>
 		<freemarker.version>2.3.23</freemarker.version>
 		<quartz.version>2.2.2</quartz.version>
-		<shiro-spring.version>1.2.3</shiro-spring.version>
+		<shiro-spring.version>1.7.0</shiro-spring.version>
 		<shiro-ehcache.version>1.2.3</shiro-ehcache.version>
 	</properties>
 	<dependencyManagement>
